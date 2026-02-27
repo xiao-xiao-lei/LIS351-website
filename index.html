@@ -6,57 +6,70 @@ STEP 1: Add the required HTML5 skeleton
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
     <title>xuxiaoxiaolei</title>
+    <link rel="stylesheet" href="a4_stylesheet.css">
   </head>
 
     <!-- =========================================================
     STEP 2: Build the “top area” (site name + navigation) using simple HTML
     ========================================================= -->
-  <body>
+  <body style="background-color: rgb(245, 220, 228);">
     <header>
-      <h1>Xiaolei's World</h1>
+      <div class="header-inner">
+      <h2 class="brand">Xiaolei's World <span class="dot">.</span></h2>
       <nav>
         <ul>
-          <li><a href="#">Books</a></li>
-          <li><a href="#">Food</a></li>
-          <li><a href="#">Music</a></li>
+          <a href="#">Books</a>
+          <a href="#">Food</a>
+          <a href="#">Music</a>
         </ul>
       </nav>
+      </div>
     </header>
 
     <!-- =========================================================
     STEP 3: Hero section + “Get Started button” as a link
     ========================================================= -->
   <main>
-    <section>
-      <h2>Welcome in!</h2>
-      <p>
+    <div class="hero">
+      <div class="hero-content">
+      <h1>Welcome in!</h1>
+      <p class="hero-subhead">
         This website is about three big things that enrich my daily life!
       </p>
        <p>
         Explore the page and share your thoughts with me ;)
       </p>
-      <a href="#">Get started</a>
-    </section>
+      <a href="#" class="btn btn-dark">Get started</a>
+      </div>
+      
+    </div>
 
     <!-- =========================================================
     STEP 4: Features section (3 blocks) + featured content section
     ========================================================= -->
-    <section>
-      <h2>Features</h2>
-      <p>
+    <section class="features">
+      <div class="container">
+      <h1 class="section-title">Features</h1>
+      <h1 class="section-lede">
         In my name, the Chinese character "笑(xiao)" means "smile". Do you know what makes me smile?
-      </p>
+      </h1>
+  
 
-      <h3>📖 Comfort Hobby: Reading Books</h3>
+      <div class="features-grid">
+        <div class="feature">
+      <div class="icon">📖</div>
+      <h3>Comfort Hobby: Reading Books</h3>
       <p>I'm a passionate book lover and a sincere writer. I feel the purest joy and solace when I rub the rough pages and immerse myself in the fascinating stories in the book world.
       </p>
       <p>
         I have a Wechat official account to record my book reviews and receive insightful opinions from other readers.
       </p>
+      </div>
 
-      <h3>🥣 Comfort Food: Rice Cakes</h3>
+      <div class="feature">
+      <div class="icon">🥣</div>
+      <h3>Comfort Food: Rice Cakes</h3>
       <p>
       I love eating and enjoy trying different recipes, but my favorite food is probably rice cakes.
       I think rice cakes are delicious no matter how they are prepared.
@@ -65,8 +78,11 @@ STEP 1: Add the required HTML5 skeleton
       My love for rice cakes comes from the sweet memory of my grandparents making
       freshly cooked rice cakes for me when I was little.
       </p>
+      </div>
 
-      <h3>🩷 Comfort Music: P1Harmony</h3>
+      <div class="feature">
+      <div class="icon">🩷</div>
+      <h3>Comfort Music: P1Harmony</h3>
       <p>
       I appreciate P1Harmony's visuals, their music that I will never get tired of listening to,
       and the members' adorable personalities.
@@ -74,45 +90,65 @@ STEP 1: Add the required HTML5 skeleton
       <p>
       My bias in the group is JONGSEOB🐯
       </p>
+      </div>
 
     </section>
-
+    
     <section>
-      <h2>Featured Content</h2>
-      <p>
-      These three elements in the page always remind me to immerse in life, to reflect and to create, stepping closer
-      to my dream life of becoming a writer and accomplish what I want to achieve. 
-      </p>
-      <img 
-      src="images/writer.jpg" 
-      alt="A Writer's Routine illustration"
-      title="This picture depicts a writer's routine in alphabetic order and in a cute way"
-      width="800" 
-      height="800">
-    </section>
+    <h1 style="text-align: center;">Featured Content</h1>
+    
+    <p style="text-align: center;">
+    The three elements always remind me to immerse in life, 
+    to reflect and to create, stepping closer to my dream life of becoming 
+    a writer and accomplishing what I want to achieve.
+    </p>
+
+    <section style="display: flex; align-items: center; justify-content: center; padding: 0 80px; gap: 10px; margin: 40px 0;">
+    
+    <div style="font-size: 120px;">💥</div>
+    
+   <img 
+    src="images/writer.jpg" 
+    alt="A Writer's Routine illustration"
+    title="This picture depicts a writer's routine in alphabetic order and in a cute way"
+    width="800" 
+    height="800"
+    style="display: block; margin: 0 auto;">
+
+    <div style="font-size: 120px;">✍️</div>
+
+  </section>
 
     <!-- =========================================================
     STEP 5: Two secondary content blocks + CTA section 
     ========================================================= -->
-    <section>
-      <h2>Secondary Content</h2>
+    <section class="features">
+      <div class="container">
+      <h1 class="section-title">Secondary Content</h1>
+      </div>
 
-      <h3>🌍 On Earth We're Briefly Gorgeous</h3>
-      <p>
-      <a href="https://mp.weixin.qq.com/s/100wztdGNjgsG0BdBavpjQ">Check the 25 books I've read in the past year 2025!</a>
-      </p>
-      <p>
-      My yearly pick is [On Earth We're Briefly Gorgeous] by Ocean Vuong.
-      </p>
-      <img 
-      src="images/Earth.jpg" 
-      alt="[On Earth We're Briefly Gorgeous] Book Cover"
-      width="360" 
-      height="500">
+    <section class="secondary-grid"
+     style="display: flex; justify-content: center; gap: 40px;">
+
+      <div class="card" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h3>🌍 On Earth We're Briefly Gorgeous</h3>
+        <p>
+          <a href="https://mp.weixin.qq.com/s/100wztdGNjgsG0BdBavpjQ"
+          style="color: rgb(180, 50, 158); text-decoration: underline;">Check the 25 books I've read in the past year 2025!</a>
+        </p>
+        <p> My yearly pick is [On Earth We're Briefly Gorgeous] by Ocean Vuong.
+        </p>
+        <img src="images/Earth.jpg"
+        alt="[On Earth We're Briefly Gorgeous] Book Cover"
+        width="360"
+        height="480">
+      </div>
       
+      <div class="card" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
        <h3>🎵 DUH!</h3>
       <p>
-      <a href="https://www.youtube.com/watch?v=7G6_avXknCk">Listen to this P1Harmony's song that demonstrates their unique attitude!</a>
+      <a href="https://www.youtube.com/watch?v=7G6_avXknCk"
+      style="color: rgb(233, 65, 121); text-decoration: underline;">Listen to this P1Harmony's song that demonstrates their unique attitude!</a>
       </p>
       <p>
       Who's that it's me, DUH!
@@ -120,22 +156,36 @@ STEP 1: Add the required HTML5 skeleton
         <img 
       src="images/p1h.jpg" 
       alt="P1Harmony members"
-      width="734" 
-      height="407">
+      width="360" 
+      height="480">
+      </div>
       </section>
 
       <section>
       <h2>Want to see more?</h2>
-      <p>
-      <a href="https://mp.weixin.qq.com/s/3n0fCZcWCEPr8VHfboHqwg">Chapter Two</a>
-      </p>
+      <div style="display: flex; margin-top: 20px;">
+      <div style="width: 50%; padding-right: 30px; box-sizing: border-box;">
+      <h3>
+      <a href="https://mp.weixin.qq.com/s/3n0fCZcWCEPr8VHfboHqwg"
+      style="color: rgb(188, 105, 116); text-decoration: underline;">Chapter Two</a>
+      </h3>
+
       <p>
       Feel free to view my other articles and follow my account!
       </p>
-      <a href="https://thewoksoflife.com/stir-fried-sticky-rice-cakes-nian-gao/">Stir-Fried Rice Cakes (Nian Gao)</a>
-      <p>
-      I want to cook this when I have time. What are some rice cake recipes you want to try?
+      </div>
+
+      <div style="width: 50%; padding-left: 30px; box-sizing: border-box;">
+        <h3>
+      <a href="https://thewoksoflife.com/stir-fried-sticky-rice-cakes-nian-gao/"
+      style="color: rgb(228, 128, 48); text-decoration: underline;">Stir-Fried Rice Cakes (Nian Gao)</a>
+        </h3>
+        <p>
+      Please see this rice cake recipe! What do you want to cook when you have time?
       </p>
+      </div>
+
+      </div>
     </section>
 
   </main>
@@ -143,14 +193,18 @@ STEP 1: Add the required HTML5 skeleton
     <!-- =========================================================
     STEP 6: Footer 
     ========================================================= -->
-  <footer>
-    <p>&copy; All rights reserved</p>
-
-    <ul>
-      <li><a href="#">Book Comments</a></li>
-      <li><a href="#">P1Harmony Playlist</a></li>
-    </ul>
-  </footer>
-
-  </body>
-</html>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <p>&copy; All rights reserved</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <a href="#">Book Comments</a>
+        <a href="#">Recipes</a>
+        <a href="#">P1Harmony Playlist</a>
+        <a href="#">About the Author</a>
+      </div>
+    </div>
+  </div>
+</footer>
